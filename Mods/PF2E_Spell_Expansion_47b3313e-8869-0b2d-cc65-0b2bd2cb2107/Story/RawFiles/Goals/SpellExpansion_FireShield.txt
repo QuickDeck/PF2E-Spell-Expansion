@@ -1,8 +1,8 @@
 Version 1
 SubGoalCombiner SGC_AND
 INITSECTION
-DB_ShieldPassives("ShieldBreakFire4", 41, 40, "REPAIR_RARE");
-DB_ShieldPassives("ShieldBreakFire6", 51, 50, "REPAIR_RARE");
+DB_ShieldPassives("ShieldBreakFire4", 41, 40, 18);
+DB_ShieldPassives("ShieldBreakFire6", 51, 50, 18);
 KBSECTION
 
 EXITSECTION
