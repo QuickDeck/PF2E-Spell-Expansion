@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="d19832a0-165f-40c7-9b09-d71d9415ca92" OwnerUUID="3ab48303-ded2-46ef-b4c4-bdd0b7cd3fab" Name="PF2E_BLESSED_BOUNDARY_AuraEffect_8">
+  <EffectInfo UUID="10040e2b-0b9f-4693-8aaf-54e617fcaa95" EffectResourceGuid="72a14af1-cfa9-34e4-8a4b-87fb6ddd4941" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

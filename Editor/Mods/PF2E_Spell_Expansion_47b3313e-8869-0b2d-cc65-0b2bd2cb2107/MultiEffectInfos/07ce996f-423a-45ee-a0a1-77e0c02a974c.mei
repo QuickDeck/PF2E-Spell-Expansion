@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="07ce996f-423a-45ee-a0a1-77e0c02a974c" OwnerUUID="3ab48303-ded2-46ef-b4c4-bdd0b7cd3fab" Name="PF2E_SEA_OF_THOUGHT_AuraEffect_3">
+  <EffectInfo UUID="044d27f7-42ac-43ea-b9b7-cc844791f5fe" EffectResourceGuid="5e15c159-8156-0b52-12a1-e81dad27e19b" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

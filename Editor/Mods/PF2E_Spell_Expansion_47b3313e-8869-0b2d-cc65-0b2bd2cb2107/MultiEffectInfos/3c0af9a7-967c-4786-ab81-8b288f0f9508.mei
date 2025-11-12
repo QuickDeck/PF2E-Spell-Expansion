@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="3c0af9a7-967c-4786-ab81-8b288f0f9508" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="Target_Spout">
-  <EffectInfo UUID="82b6e7e9-23af-4c89-95aa-3ac06e8f7c9a" EffectResourceGuid="eacfc88e-9ebb-9c8a-8e50-1b9c8b1cf500" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
-</MultiEffectInfos>

@@ -97,11 +97,11 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="Pathfinder2ndEdition_dda83752-5c01-30f9-6a09-824c7e182090"/>
-                            <attribute id="MD5" type="LSString" value="889f97c126f6b628ab59f90338639b69"/>
+                            <attribute id="MD5" type="LSString" value="0aa63910c82a777ecf632be89b6e8c33"/>
                             <attribute id="Name" type="LSString" value="Pathfinder 2nd Edition"/>
                             <attribute id="PublishHandle" type="uint64" value="4330140"/>
                             <attribute id="UUID" type="guid" value="dda83752-5c01-30f9-6a09-824c7e182090"/>
-                            <attribute id="Version64" type="int64" value="36873221949095939"/>
+                            <attribute id="Version64" type="int64" value="36873221949095942"/>
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="ImpUI_26922ba9-6018-5252-075d-7ff2ba6ed879"/>
@@ -141,10 +141,10 @@
                     <attribute id="Author" type="LSString" value=""/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="An expansion on the spells added by the Pathfinder 2E Conversion mod by Kraken and Mirage. Requires that mod as a base!"/>
-                    <attribute id="FileSize" type="uint64" value="0"/>
+                    <attribute id="FileSize" type="uint64" value="9058471"/>
                     <attribute id="Folder" type="LSString" value="PF2E_Spell_Expansion_47b3313e-8869-0b2d-cc65-0b2bd2cb2107"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="f00cb607aecaa1693a017a93444b7df7"/>
+                    <attribute id="MD5" type="LSString" value="6388939b66810fcece9c01963cbdc1b4"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="PF2E Spell Expansion"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -152,7 +152,7 @@
                     <attribute id="PublishHandle" type="uint64" value="5245274"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="47b3313e-8869-0b2d-cc65-0b2bd2cb2107"/>
-                    <attribute id="Version64" type="int64" value="36028797018964447"/>
+                    <attribute id="Version64" type="int64" value="36028797018964749"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927718583632"/>

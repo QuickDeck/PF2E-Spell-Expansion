@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="2aa7ebbf-cc60-4a32-b315-81d1893f4b97" OwnerUUID="2a707527-be40-44f5-a173-6f500be7022b" Name="KineticRam_3A_PositionEffect">
+<MultiEffectInfos UUID="2aa7ebbf-cc60-4a32-b315-81d1893f4b97" OwnerUUID="2a707527-be40-44f5-a173-6f500be7022b" Name="PF2E_KineticRam_3A_PositionEffect">
   <EffectInfo UUID="c344329a-b195-4fc1-91e0-57665fa524c1" EffectResourceGuid="018b0619-ed9f-ecac-6a92-389cc1813e0e" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
 </MultiEffectInfos>

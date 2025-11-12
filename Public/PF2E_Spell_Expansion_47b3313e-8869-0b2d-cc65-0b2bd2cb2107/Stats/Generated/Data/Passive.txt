@@ -47,6 +47,9 @@ type "PassiveData"
 using "ShieldBreakFire4"
 data "DescriptionParams" "N/A;50"
 
+new entry "BUFF"
+type "PassiveData"
+
 new entry "CONJURATION"
 type "PassiveData"
 
@@ -67,4 +70,15 @@ data "Boosts" "ProficiencyBonus(SavingThrow, Constitution);ProficiencyBonus(Savi
 data "StatsFunctorContext" "OnTurn"
 data "Conditions" "TurnBased()"
 data "StatsFunctors" "AI_IGNORE:IF( not (HasDashStatus() or HasStatus('STRIDE') or HasStatus('DISENGAGE')) ):ApplyStatus(DEBUG_RESET_MOVE,100,-1); IF( HasDashStatus() or HasStatus('STRIDE') or HasStatus('DISENGAGE') ):UseActionResource(ActionPoint,0.5,0)"
+
+new entry "AURA"
+type "PassiveData"
+
+new entry "EthericShards_Passive"
+type "PassiveData"
+data "DisplayName" "h0fa637e5g320cg9e85g116fg38abce262bed;1"
+data "Icon" "Spell_Transmutation_SpikeGrowth"
+data "PriorityOrder" "2"
+data "StatsFunctorContext" "OnMovedDistance"
+data "StatsFunctors" "ApplyStatus(SELF,EthericShards_Damage,100,0)"
 

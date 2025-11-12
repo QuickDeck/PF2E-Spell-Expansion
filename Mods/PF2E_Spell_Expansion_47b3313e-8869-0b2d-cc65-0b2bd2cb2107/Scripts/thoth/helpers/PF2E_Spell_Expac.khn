@@ -1,7 +1,27 @@
 local __util = require 'larian.util'
---Conditions for Baldurs Gate Pathfinder Staves
+--Conditions for Baldurs Pathfinder Spell Expansion
 
 --Detect if spells teleport you
 function IsTeleportSpell()
 	return (HasFunctor(StatsFunctorType.TeleportSource) | SpellTypeIs(SpellType.Teleportation))
+end
+
+--Detect if a weapon has the magical property
+function IsMagicWeapon()
+	return HasWeaponProperty(WeaponProperties.Magical, weapon)
+end
+
+--Detect if a container has a magic item in it
+function HasMagicItemInInventory(target)
+    local entity = entity or context.Target
+    local items = GetItemsInInventory(target)
+    if items ~= nil then
+        for _, entity in ipairs(items.Items) do
+            if HasWeaponProperty(WeaponProperties.Magical, entity).Result or HasAnyTags({'POTION','SCROLL','ORI_GALE_CONSUMABLEARTEFACT','ACT3_LOW_TRESSYMTRADE_MAGICITEM'}).Result then
+                return ConditionResult(true)
+            end
+        end
+    end
+
+    return ConditionResult(false)
 end

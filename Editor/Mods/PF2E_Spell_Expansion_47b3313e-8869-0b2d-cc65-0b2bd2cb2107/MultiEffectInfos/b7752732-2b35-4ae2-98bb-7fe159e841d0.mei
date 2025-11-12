@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="b7752732-2b35-4ae2-98bb-7fe159e841d0" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="PF2E_EthericShards_PositionEffect">
+  <EffectInfo UUID="5c413c3b-a061-4d1c-b8d0-fffda60157d2" EffectResourceGuid="45cf47b1-ec24-eb2a-407b-855aace527b5" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

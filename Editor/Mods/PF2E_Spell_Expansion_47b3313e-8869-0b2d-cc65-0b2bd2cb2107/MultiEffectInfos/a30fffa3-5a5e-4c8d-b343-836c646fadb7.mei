@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="a30fffa3-5a5e-4c8d-b343-836c646fadb7" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="Target_IgniteFireworks">
-  <EffectInfo UUID="ce3d7ea9-f572-4b08-b72f-1a38ca779ead" EffectResourceGuid="a803ed17-77e0-bc28-90d6-318edc7322ed" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
-</MultiEffectInfos>

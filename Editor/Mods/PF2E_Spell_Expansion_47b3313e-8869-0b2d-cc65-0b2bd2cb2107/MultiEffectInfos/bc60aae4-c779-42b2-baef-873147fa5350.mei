@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="bc60aae4-c779-42b2-baef-873147fa5350" OwnerUUID="29b14b5e-058a-45be-97b7-6ad350e53d02" Name="VFX_WeaponStorm_Prepare">
+<MultiEffectInfos UUID="bc60aae4-c779-42b2-baef-873147fa5350" OwnerUUID="29b14b5e-058a-45be-97b7-6ad350e53d02" Name="PF2E_WeaponStorm_PrepareEffect">
   <EffectInfo UUID="a28244c0-6808-4e97-b29e-b7aa7d5ce1d7" EffectResourceGuid="39b23cb6-d3a8-54e2-67b2-b298cf4fe4ff" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
 </MultiEffectInfos>

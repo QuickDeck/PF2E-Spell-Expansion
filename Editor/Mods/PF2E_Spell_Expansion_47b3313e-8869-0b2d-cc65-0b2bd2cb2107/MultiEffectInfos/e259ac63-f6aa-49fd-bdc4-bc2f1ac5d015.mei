@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="e259ac63-f6aa-49fd-bdc4-bc2f1ac5d015" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="PF2E_TKTrip_CastEffect">
+  <EffectInfo UUID="cec95fac-a02b-46cf-bb2c-067dfc911ffa" EffectResourceGuid="2171b54f-2aa2-544c-62b3-6192c440131d" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="true" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

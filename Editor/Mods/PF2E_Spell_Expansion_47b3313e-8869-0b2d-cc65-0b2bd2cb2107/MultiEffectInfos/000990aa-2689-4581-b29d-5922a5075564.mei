@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="000990aa-2689-4581-b29d-5922a5075564" OwnerUUID="d6a10ec8-ce84-432b-a5f9-03a0548ef9ed" Name="PF2E_IgniteFireworks_PositionEffect">
+  <EffectInfo UUID="e77397ee-cae4-4677-ae35-0bacfdbb513e" EffectResourceGuid="1cd85058-65e3-bf6f-f56d-85a5ab85e002" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_CastFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

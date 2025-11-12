@@ -5,6 +5,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="1fe66e14-2f0d-4ddd-ac8b-e13fa2041060" />
         <field name="Name" type="NameTableFieldDefinition" value="FIRE AND ACID" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="test" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -13,22 +14,20 @@
         <field name="Name" type="NameTableFieldDefinition" value="IgniteFireworks" />
         <field name="Level" type="IntegerTableFieldDefinition" value="2" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
-        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="4" />
-        <field name="ExplodeRadius" type="IntegerTableFieldDefinition" value="4" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="2" />
         <field name="SpellRoll" type="StringTableFieldDefinition" value="not SavingThrow(Ability.Dexterity, SourceSpellDC())" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SaveCrit()):DealDamage(1d8,Fire,Magical);IF(not SaveCrit()):DealDamage(1d8,Thunder,Magical);IF(not SaveCrit()):ApplyStatus(Dazzled,100,3);IF(SaveCrit()):DealDamage((1d8)*2,Fire,Magical);IF(SaveCrit()):DealDamage((1d8)*2,Thunder,Magical);IF(SaveCrit()):ApplyStatus(Dazzled,100,10);IF(SaveCrit()):ApplyStatus(BURNING,100,-1);IF(SaveCrit()):ApplyStatus(CriticalFailureDisplay,100,0);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not SaveCritMiss('Reflex')):DealDamage((1d8)/2,Fire,Magical);IF(not SaveCritMiss('Reflex')):DealDamage((1d8)/2,Thunder,Magical);" />
-        <field name="Trajectories" type="StringTableFieldDefinition" value="19fcd5fe-35c2-4b04-889f-4bdf81d237cc" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="fe03addd-27fd-45c0-8f7b-5ce6e054101b" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveAction_WardingFlare" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h33e0dce1g5c2eg7836g8d1fgf6486e2ecd8b" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b3337ceg54c7g4a97g58begcea64ba59980" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9b3337ceg54c7g4a97g58begcea64ba59980" version="5" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,Fire,Magical);DealDamage(1d8,Thunder,Magical)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(Dazzled,100,3);" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="5f3e75ef-5efb-47a3-b6ac-1b838cbe7bc3" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Fire_Gen_L1to3" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Fire_Gen_L1to3_Loop" />
-        <field name="CastSound" type="StringTableFieldDefinition" value="Projectiles_Grenades_Cast_FireWorks" />
         <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
         <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
@@ -41,14 +40,17 @@
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c88e9cfa-df92-477a-ae75-cbfb932350b4" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="e235ca47-1bf5-4587-9475-cf191b6005f9" />
-        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="0da464b2-eb00-44b6-8371-45964cac8bfa" />
-        <field name="PositionEffect" type="GuidObjectTableFieldDefinition" value="a30fffa3-5a5e-4c8d-b343-836c646fadb7" />
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:SurfaceChange(Ignite);GROUND:SurfaceChange(Melt)" />
         <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
         <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellSoundMagnitude" type="EnumerationTableFieldDefinition" value="Normal" enumeration_type_name="SpellSoundMagnitude" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Projectiles_Grenades_Cast_FireWorks" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="0da464b2-eb00-44b6-8371-45964cac8bfa" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h123de0f1gcceag5847gcaeagc81c30f5c271" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -73,6 +75,8 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;SpellSlotsGroup:1:1:4" />
         <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_IgniteFireworks" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,Fire,Magical);DealDamage(2d8,Thunder,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -95,6 +99,8 @@
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not SaveCritMiss('Reflex')):DealDamage((3d8)/2,Fire,Magical);IF(not SaveCritMiss('Reflex')):DealDamage((3d8)/2,Thunder,Magical);" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;SpellSlotsGroup:1:1:6" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,Fire,Magical);DealDamage(3d8,Thunder,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="3" />
       </fields>
     </stat_object>
   </stat_objects>

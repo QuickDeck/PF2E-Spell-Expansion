@@ -13,5 +13,52 @@
         <field name="Name" type="NameTableFieldDefinition" value="BreatheOfLife" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="30b185e6-a92b-4103-b4dd-348d7c847cf2" />
+        <field name="Name" type="NameTableFieldDefinition" value="OakenResilience_Dispel" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2301231agbd4cg2143g2539g94bd53aa999a" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Skill_Druid_WildShape_Dismiss" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnCastHit" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="IsAbleToReact(context.Observer) and Self(context.Observer) and IsDamageTypeFire();" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_OBSERVER,Shout_OakenResilience_Dispel,true,true,true);" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph') or Tagged('MINDFLAYER') or HasStatus('SG_Disguise')" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff92ea37gbd74g9864g8249g08d6bfc1ba5f" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f8f56581-f0e9-402c-a1e1-b005f1bb8fc1" />
+        <field name="Name" type="NameTableFieldDefinition" value="OakenResilience_Dispel_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30b185e6-a92b-4103-b4dd-348d7c847cf2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_OBSERVER,Shout_OakenResilience_Dispel_4,true,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5b23adbe-f336-4d49-b563-90f311f4f36a" />
+        <field name="Name" type="NameTableFieldDefinition" value="OakenResilience_Dispel_6" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="30b185e6-a92b-4103-b4dd-348d7c847cf2" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_OBSERVER,Shout_OakenResilience_Dispel_6,true,true,true);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dfa8ae3b-46ae-487e-9a9f-66cb4e3bb45c" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="231597e9-425c-4a37-94b2-d09595f0194c" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="46d0569e-574f-490d-9d46-8218b3b32911" />
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="61bab1f7-9a3f-4527-b14d-bceace0ba686" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>

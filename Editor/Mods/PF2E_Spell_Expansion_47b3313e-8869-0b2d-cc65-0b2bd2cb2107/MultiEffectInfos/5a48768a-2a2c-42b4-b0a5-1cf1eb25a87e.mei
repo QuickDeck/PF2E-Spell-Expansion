@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="5a48768a-2a2c-42b4-b0a5-1cf1eb25a87e" OwnerUUID="2a707527-be40-44f5-a173-6f500be7022b" Name="Shout_WeaponStorm">
+<MultiEffectInfos UUID="5a48768a-2a2c-42b4-b0a5-1cf1eb25a87e" OwnerUUID="2a707527-be40-44f5-a173-6f500be7022b" Name="PF2E_WeaponStorm_S_PositionEffect">
   <EffectInfo UUID="7a28b9e9-9086-46e9-a3ad-5097206a44b8" EffectResourceGuid="1731925b-e734-da5b-f12b-2d2e2de98695" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
 </MultiEffectInfos>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="761f06ec-b173-4393-b83e-c5f066ba888d" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="PF2E_TKDisarm_CastEffect">
+  <EffectInfo UUID="b6b2e362-433e-4eb9-871f-767fbe612bcc" EffectResourceGuid="dbef6594-c089-900e-342c-e53196287ca0" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="true" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

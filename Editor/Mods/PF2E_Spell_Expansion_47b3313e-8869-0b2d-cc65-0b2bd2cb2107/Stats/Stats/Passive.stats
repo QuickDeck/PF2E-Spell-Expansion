@@ -73,6 +73,12 @@
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e1f179b6-7495-4be8-95d4-34e798dad727" />
+        <field name="Name" type="NameTableFieldDefinition" value="BUFF" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="b82b2c88-fd8a-42cd-ac72-d3b849462ca0" />
         <field name="Name" type="NameTableFieldDefinition" value="CONJURATION" />
       </fields>
@@ -99,6 +105,23 @@
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="AI_IGNORE:IF( not (HasDashStatus() or HasStatus('STRIDE') or HasStatus('DISENGAGE')) ):ApplyStatus(DEBUG_RESET_MOVE,100,-1); IF( HasDashStatus() or HasStatus('STRIDE') or HasStatus('DISENGAGE') ):UseActionResource(ActionPoint,0.5,0)" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_Skilled" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object color="#FF000000" is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a266e324-a70e-48fe-ac2a-f016ad2970aa" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="36202f86-ee52-428a-b867-e7262e857277" />
+        <field name="Name" type="NameTableFieldDefinition" value="EthericShards_Passive" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0fa637e5g320cg9e85g116fg38abce262bed" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_SpikeGrowth" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnMovedDistance" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF,EthericShards_Damage,100,0)" />
       </fields>
     </stat_object>
   </stat_objects>

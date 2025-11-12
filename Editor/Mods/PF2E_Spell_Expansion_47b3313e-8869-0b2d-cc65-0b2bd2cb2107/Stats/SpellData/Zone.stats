@@ -15,10 +15,9 @@
         <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Evocation" enumeration_type_name="SpellSchool" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureBarrage" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6e1a89deg66d0g7371g4a10gaced518c1f2a" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h159b45dbg7579g3009gd689g93151a88d4ee" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h159b45dbg7579g3009gd689g93151a88d4ee" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon*4, MainMeleeWeaponDamageType)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
-        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Ranger_ConjureBarrage_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Ranger_ConjureBarrage_L1to3" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -46,6 +45,7 @@
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Ranger_UmbralCloak" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Ranger_UmbralCloak" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0444f9b9-f4a9-4c0e-8671-3bfc3e883447" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h553f7407g843fg1929g3c42g69e930fe8f09" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -59,7 +59,7 @@
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="IF(not SaveCrit() and IsWeaponDamageDieD4(GetActiveWeapon())):DealDamage(MainMeleeWeapon+3d4, MainMeleeWeaponDamageType);IF(not SaveCrit() and IsWeaponDamageDieD6(GetActiveWeapon())):DealDamage(MainMeleeWeapon+3d6, MainMeleeWeaponDamageType);IF(not SaveCrit() and IsWeaponDamageDieD8(GetActiveWeapon())):DealDamage(MainMeleeWeapon+3d8, MainMeleeWeaponDamageType);IF(not SaveCrit() and IsWeaponDamageDieD10(GetActiveWeapon())):DealDamage(MainMeleeWeapon+3d10, MainMeleeWeaponDamageType);IF(not SaveCrit() and IsWeaponDamageDieD12(GetActiveWeapon())):DealDamage(MainMeleeWeapon+3d12, MainMeleeWeaponDamageType);IF(SaveCrit() and IsWeaponDamageDieD4(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d4)*2, MainMeleeWeaponDamageType);IF(SaveCrit() and IsWeaponDamageDieD6(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d6)*2, MainMeleeWeaponDamageType);IF(SaveCrit() and IsWeaponDamageDieD8(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d8)*2, MainMeleeWeaponDamageType);IF(SaveCrit() and IsWeaponDamageDieD10(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d10)*2, MainMeleeWeaponDamageType);IF(SaveCrit() and IsWeaponDamageDieD12(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d12)*2, MainMeleeWeaponDamageType);IF(SaveCrit()):ExecuteWeaponFunctors(MainHand);" />
         <field name="SpellFail" type="StringTableFieldDefinition" value="IF(not SaveCritMiss('Reflex') and IsWeaponDamageDieD4(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d4)/2, MainMeleeWeaponDamageType);IF(not SaveCritMiss('Reflex') and IsWeaponDamageDieD6(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d6)/2, MainMeleeWeaponDamageType);IF(not SaveCritMiss('Reflex') and IsWeaponDamageDieD8(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d8)/2, MainMeleeWeaponDamageType);IF(not SaveCritMiss('Reflex') and IsWeaponDamageDieD10(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d10)/2, MainMeleeWeaponDamageType);IF(not SaveCritMiss('Reflex') and IsWeaponDamageDieD12(GetActiveWeapon())):DealDamage((MainMeleeWeapon+3d12)/2, MainMeleeWeaponDamageType);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbdcd62b1ge125g6a7bg84f2ge166b8157de5" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4938882g29e9ga045g4d7agca3a3975a8eb" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc4938882g29e9ga045g4d7agca3a3975a8eb" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon*4, MainMeleeWeaponDamageType)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Dexterity" />
         <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
@@ -80,7 +80,6 @@
         <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Ranger_ConjureBarrage_L1to3" />
         <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Ranger_ConjureBarrage_L1to3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_ConjureBarrage" />
-        <field name="TooltipOnSave" type="StringTableFieldDefinition" value="f762efbb-f8f1-493e-b248-2de1567b4bd2" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Character();" />
@@ -89,6 +88,7 @@
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Ranger_UmbralCloak" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Action_Loop_Ranger_UmbralCloak" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="0444f9b9-f4a9-4c0e-8671-3bfc3e883447" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="hf0407aabg516cg67a2g9d54g50f0b2a7401a" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -96,7 +96,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="e1d3a0ea-5be0-4642-8a94-3c88940bd5d5" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponStorm_5" />
         <field name="Level" type="IntegerTableFieldDefinition" value="5" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf154b0ceg6c51gf02dg1e15g3132225daece" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="33795173-877c-4538-85fb-decb61317576" />
@@ -111,7 +110,6 @@
         <field name="UUID" type="IdTableFieldDefinition" value="11fa6842-b732-444e-b831-5ed4c56e689b" />
         <field name="Name" type="NameTableFieldDefinition" value="WeaponStorm_6" />
         <field name="Level" type="IntegerTableFieldDefinition" value="6" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he1487d44g7b59g653ag219bgfb714405c2da" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:6;" />
         <field name="PowerLevel" type="IntegerTableFieldDefinition" value="6" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="33795173-877c-4538-85fb-decb61317576" />

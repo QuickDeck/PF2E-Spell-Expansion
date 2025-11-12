@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="7fae6940-c608-446e-adf1-61a966f36c8d" OwnerUUID="3ab48303-ded2-46ef-b4c4-bdd0b7cd3fab" Name="DETECT_MAGIC_StatusEffect">
+  <EffectInfo UUID="4b5b987a-18bc-42c6-ae95-1a1fb41d8d71" EffectResourceGuid="9b7592a4-2819-27d2-9605-a9dd94dc27f6" DetachSource="false" DetachTarget="false" KeepRotation="true" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_RootFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

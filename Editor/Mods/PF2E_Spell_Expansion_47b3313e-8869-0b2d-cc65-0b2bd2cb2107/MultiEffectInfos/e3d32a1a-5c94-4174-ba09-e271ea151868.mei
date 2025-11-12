@@ -1,4 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MultiEffectInfos UUID="e3d32a1a-5c94-4174-ba09-e271ea151868" OwnerUUID="8c1e0e64-6a7f-4a36-a3ae-f77b22c8c03b" Name="WeaponStorm_Zone">
+<MultiEffectInfos UUID="e3d32a1a-5c94-4174-ba09-e271ea151868" OwnerUUID="8c1e0e64-6a7f-4a36-a3ae-f77b22c8c03b" Name="PF2E_WeaponStorm_Z_PositionEffect">
   <EffectInfo UUID="2599f2d3-c93a-4d39-a6fa-9f5e7df16268" EffectResourceGuid="a9d748e7-5cb1-f5fd-cfcf-a6c2c3bee5ba" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
 </MultiEffectInfos>

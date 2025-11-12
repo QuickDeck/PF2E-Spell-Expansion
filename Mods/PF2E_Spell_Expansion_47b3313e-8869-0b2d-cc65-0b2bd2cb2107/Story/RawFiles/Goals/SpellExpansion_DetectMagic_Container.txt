@@ -1,0 +1,105 @@
+Version 1
+SubGoalCombiner SGC_AND
+INITSECTION
+
+KBSECTION
+//REGION Detect Magic Loot in Container (Self)
+// POTIONS
+IF
+StatusApplied(_Object, "DETECT_MAGIC_TECHNICAL_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("POTION_56c99a77-8f6a-4584-8e41-2a3b9f6b5261", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_TECHNICAL", -1.0, 1);
+
+// SCROLLS
+IF
+StatusApplied(_Object, "DETECT_MAGIC_TECHNICAL_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("SCROLL_dd86c045-0370-4ec9-b7c5-b0b160706f09", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_TECHNICAL", -1.0, 1);
+
+// GALE FOOD
+IF
+StatusApplied(_Object, "DETECT_MAGIC_TECHNICAL_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("ORI_GALE_CONSUMABLEARTEFACT_7b96246c-54ba-43ea-b01d-4e0b20ad35f1", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_TECHNICAL", -1.0, 1);
+
+// TRESSYM TRADE
+IF
+StatusApplied(_Object, "DETECT_MAGIC_TECHNICAL_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("ACT3_LOW_TRESSYMTRADE_MAGICITEM_983087c8-c9d3-4a87-bc69-65f9329666c8", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_TECHNICAL", -1.0, 1);
+
+// REMOVE GLOW
+IF
+StatusRemoved(_Object, "DETECT_MAGIC_TECHNICAL_CONTAINER", _, _)
+THEN
+RemoveStatus(_Object, "DETECT_MAGIC_TECHNICAL");
+//END_REGION
+
+//REGION Detect Magic Loot in Container (Others)
+// POTIONS
+IF
+StatusApplied(_Object, "DETECT_MAGIC_STATUS_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("POTION_56c99a77-8f6a-4584-8e41-2a3b9f6b5261", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_STATUS", -1.0, 1);
+
+// SCROLLS
+IF
+StatusApplied(_Object, "DETECT_MAGIC_STATUS_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("SCROLL_dd86c045-0370-4ec9-b7c5-b0b160706f09", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_STATUS", -1.0, 1);
+
+// GALE FOOD
+IF
+StatusApplied(_Object, "DETECT_MAGIC_STATUS_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("ORI_GALE_CONSUMABLEARTEFACT_7b96246c-54ba-43ea-b01d-4e0b20ad35f1", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_STATUS", -1.0, 1);
+
+// TRESSYM TRADE
+IF
+StatusApplied(_Object, "DETECT_MAGIC_STATUS_CONTAINER", _, _)
+AND
+IsItem(_Object, 1)
+AND
+ItemTagIsInInventory("ACT3_LOW_TRESSYMTRADE_MAGICITEM_983087c8-c9d3-4a87-bc69-65f9329666c8", _Object, _)
+THEN
+ApplyStatus(_Object, "DETECT_MAGIC_STATUS", -1.0, 1);
+
+// REMOVE GLOW
+// REMOVE GLOW
+IF
+StatusRemoved(_Object, "DETECT_MAGIC_STATUS_CONTAINER", _, _)
+THEN
+RemoveStatus(_Object, "DETECT_MAGIC_STATUS");
+
+//END_REGION
+EXITSECTION
+
+ENDEXITSECTION

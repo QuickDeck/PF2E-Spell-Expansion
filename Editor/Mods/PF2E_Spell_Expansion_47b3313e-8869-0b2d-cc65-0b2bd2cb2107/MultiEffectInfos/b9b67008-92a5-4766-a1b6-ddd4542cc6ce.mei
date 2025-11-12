@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="b9b67008-92a5-4766-a1b6-ddd4542cc6ce" OwnerUUID="88340c7b-5e8b-4450-a54b-54a649c3257e" Name="PF2E_TKShove_CastEffect">
+  <EffectInfo UUID="e270a2e5-ff31-4fbd-84e9-09ead28a481d" EffectResourceGuid="5a53cc1b-bbc9-dc58-3cf0-c560a4301b02" DetachSource="false" DetachTarget="true" KeepRotation="false" UseOrientDirection="true" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" StartTextKey="Cast" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>
