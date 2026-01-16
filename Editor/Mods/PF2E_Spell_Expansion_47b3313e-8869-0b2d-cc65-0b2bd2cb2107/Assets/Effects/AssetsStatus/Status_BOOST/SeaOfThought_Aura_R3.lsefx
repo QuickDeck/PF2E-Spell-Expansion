@@ -2,7 +2,7 @@
 <effect version="0.0" effectversion="1.0.0" id="00000000-0000-0000-0000-000000000000">
   <phases>
     <object class="" classid="00000000-0000-0000-0000-000000000000" assembly="">
-      <data id="63518da7-b380-4c60-be5d-e6189148bfc5" duration="2" playcount="1" definitionid="fc34bad5-e4a8-4855-bdd1-ece88d327719" />
+      <data id="63518da7-b380-4c60-be5d-e6189148bfc5" duration="1" playcount="1" definitionid="fc34bad5-e4a8-4855-bdd1-ece88d327719" />
     </object>
     <object class="" classid="00000000-0000-0000-0000-000000000000" assembly="">
       <data id="78a566d4-7859-4cdc-acc4-be8277277a18" duration="0.5" playcount="-1" definitionid="2d6a16c1-4632-4f7f-8097-4717dc65d7bd" />
@@ -7580,7 +7580,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="Light" start="0" end="1" instancename="dda2b32c-de29-4c91-8518-cbb7a79c9cf8">
+        <component class="Light" start="0" end="2.5" instancename="e65ee86d-b6b6-4246-b6e3-137777a00088">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -7589,7 +7589,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,1" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,2.5" />
               </data>
             </property>
             <property id="ff68db76-6f76-4ae2-b476-c3ecad6bd2dd">
@@ -7599,8 +7599,8 @@
                     <rampchannel type="Linear" id="3eda494e-4fc2-444e-8936-a6c48c75b679" selected="True">
                       <keyframes>
                         <keyframe time="0" value="0" />
-                        <keyframe time="0.1" value="0.7" />
-                        <keyframe time="0.3302469" value="0.7000004" />
+                        <keyframe time="0.38" value="1" />
+                        <keyframe time="0.62" value="1" />
                         <keyframe time="1" value="0" />
                       </keyframes>
                     </rampchannel>
@@ -7615,8 +7615,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="75385d48-a50b-4f45-b70f-afdb02764187" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="10" />
-                        <keyframe time="1" value="10" />
+                        <keyframe time="0" value="3" />
+                        <keyframe time="1" value="3" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>
@@ -7631,7 +7631,7 @@
                       <keyframes>
                         <keyframe time="0" value="-13293605" />
                         <keyframe time="0.3333333" value="-13424945" />
-                        <keyframe time="0.4461336" value="-13949292" />
+                        <keyframe time="0.9986413" value="-13949292" />
                         <keyframe time="1" value="-16777216" />
                       </keyframes>
                     </rampchannel>
@@ -7842,7 +7842,7 @@
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="-5" />
               </data>
             </property>
-            <propertygroup id="f3aa7120-df08-4651-9717-9681a5287300" name="Property Group" collapsed="False" />
+            <propertygroup id="a3dceccc-fcc3-4dde-895f-ad80a817ddd8" name="Property Group" collapsed="False" />
           </properties>
           <modules>
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
@@ -17074,7 +17074,7 @@
         <id value="4" />
       </ids>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="Model" start="0" end="2.5" instancename="ab4694d4-90fe-4daa-8902-7ae41ceff380">
+        <component class="Model" start="0" end="1.5" instancename="ab4694d4-90fe-4daa-8902-7ae41ceff380">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -17083,7 +17083,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,2.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,1.5" />
               </data>
             </property>
             <property id="5c2711b8-7165-4ef0-8496-5d901268d9d9">
@@ -17302,7 +17302,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="944f8159-7854-4cbb-81f9-58224594183c" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="1" />
+                        <keyframe time="0" value="0" />
+                        <keyframe time="0.65" value="1" />
                         <keyframe time="1" value="1" />
                       </keyframes>
                     </rampchannel>
@@ -17521,7 +17522,7 @@
             <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="False" index="3" />
           </modules>
         </component>
-        <component class="Model" start="2.5" end="3.5" instancename="d97d1ea1-f83f-4f3b-95a9-bae5adc7d04d">
+        <component class="Model" start="1.5" end="2" instancename="d97d1ea1-f83f-4f3b-95a9-bae5adc7d04d">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -17530,7 +17531,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="2.5,3.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.5,2" />
               </data>
             </property>
             <property id="5c2711b8-7165-4ef0-8496-5d901268d9d9">
@@ -17970,7 +17971,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="Model" start="0" end="2.5" instancename="bc98f34e-4771-451a-a746-91b03f3bae69">
+        <component class="Model" start="0" end="1.5" instancename="bc98f34e-4771-451a-a746-91b03f3bae69">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -17979,7 +17980,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,2.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,1.5" />
               </data>
             </property>
             <property id="15864e49-e811-41aa-9f27-f2ca410a13cf">
@@ -18113,7 +18114,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="944f8159-7854-4cbb-81f9-58224594183c" selected="True">
                       <keyframes>
-                        <keyframe time="0" value="0.5" />
+                        <keyframe time="0" value="0" />
+                        <keyframe time="0.65" value="0.5" />
                         <keyframe time="1" value="0.5" />
                       </keyframes>
                     </rampchannel>
@@ -18463,7 +18465,7 @@
             <module id="e2afc256-8cf0-4fb7-94ab-88cfb02cc1f4" muted="False" index="4" />
           </modules>
         </component>
-        <component class="Model" start="2.5" end="3.5" instancename="4dfabd13-ae19-489d-99a9-91649cd426d7">
+        <component class="Model" start="1.5" end="2" instancename="4dfabd13-ae19-489d-99a9-91649cd426d7">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -18472,7 +18474,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="2.5,3.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.5,2" />
               </data>
             </property>
             <property id="15864e49-e811-41aa-9f27-f2ca410a13cf">
@@ -18958,7 +18960,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="Sound" start="0" end="2.5" instancename="a64b51d2-3d43-4663-b889-77c2d9e7d830">
+        <component class="Sound" start="0.5" end="1.5" instancename="a64b51d2-3d43-4663-b889-77c2d9e7d830">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -18967,7 +18969,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,2.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.5,1.5" />
               </data>
             </property>
             <property id="d44a643d-e831-4fc6-b8ab-c13e52162f34">
@@ -20538,7 +20540,7 @@
             <module id="b369fad0-cc26-42f3-bdc2-0b8f120c6081" muted="False" index="10" />
           </modules>
         </component>
-        <component class="ParticleSystem" start="2.5" end="3" instancename="b486b087-640c-464a-8419-0fbdb0691c7b">
+        <component class="ParticleSystem" start="1.5" end="2" instancename="b486b087-640c-464a-8419-0fbdb0691c7b">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -20547,7 +20549,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="2.5,3" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.5,2" />
               </data>
             </property>
             <property id="93b34a52-eef2-4f88-80f6-19e3126188ca">
@@ -22070,7 +22072,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="GravityForce" start="0" end="3.5" instancename="e303d565-492d-46d7-81e4-e2642160b4a5">
+        <component class="GravityForce" start="0" end="2" instancename="e303d565-492d-46d7-81e4-e2642160b4a5">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -22079,7 +22081,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,3.5" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0,2" />
               </data>
             </property>
             <property id="5b80f982-c9f9-426c-8d35-cdcad8250e4b">
@@ -22180,17 +22182,17 @@
             </property>
             <property id="d9c8f8f4-03ef-4a81-afcc-9979213be536">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Loop &lt;3cfa4a73-f2cb-4dd8-a16e-2651eb37a3e7&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="Spell_Impact_Utility_CreateWater_L1to3 &lt;b9809dff-d50b-b2fe-ef5b-2561ceeeef23&gt;" />
               </data>
             </property>
             <property id="3cc17729-865a-4d13-8b7a-48d788b7cfbb">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Loop &lt;3cfa4a73-f2cb-4dd8-a16e-2651eb37a3e7&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="" />
               </data>
             </property>
             <property id="83f4fce2-68bb-41eb-b2fe-9082b8fc9147">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Stop &lt;a47d32a2-b565-4bb1-bcb7-2f2710b4d6f2&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="" />
               </data>
             </property>
             <property id="d719a367-01a3-44b3-a94d-830503c01095">
@@ -22204,7 +22206,7 @@
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
           </modules>
         </component>
-        <component class="Sound" start="2.5" end="3" instancename="a38a6068-c814-4684-a78a-8a9eae40034d">
+        <component class="Sound" start="1.5" end="2" instancename="49f80aaf-65fc-4632-900a-e8b7a37e6e3b">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -22213,7 +22215,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="2.5,3" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="1.5,2" />
               </data>
             </property>
             <property id="d44a643d-e831-4fc6-b8ab-c13e52162f34">
@@ -22223,17 +22225,17 @@
             </property>
             <property id="d9c8f8f4-03ef-4a81-afcc-9979213be536">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Loop &lt;3cfa4a73-f2cb-4dd8-a16e-2651eb37a3e7&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="Spell_Impact_Utility_CreateWater_L1to3 &lt;b9809dff-d50b-b2fe-ef5b-2561ceeeef23&gt;" />
               </data>
             </property>
             <property id="3cc17729-865a-4d13-8b7a-48d788b7cfbb">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Loop &lt;3cfa4a73-f2cb-4dd8-a16e-2651eb37a3e7&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="" />
               </data>
             </property>
             <property id="83f4fce2-68bb-41eb-b2fe-9082b8fc9147">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="VFX_Env_CTY_Raft_Splashes_Stop &lt;a47d32a2-b565-4bb1-bcb7-2f2710b4d6f2&gt;" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="" />
               </data>
             </property>
             <property id="d719a367-01a3-44b3-a94d-830503c01095">
@@ -22241,7 +22243,7 @@
                 <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="-1" />
               </data>
             </property>
-            <propertygroup id="9eacea3c-0d97-4709-9d59-cf1bc926c32a" name="Property Group" collapsed="False" />
+            <propertygroup id="e7dba626-0b72-4446-8cee-9e18a947035d" name="Property Group" collapsed="False" />
           </properties>
           <modules>
             <module id="286df729-035e-4bb8-a210-c836ddbbbacc" muted="False" index="0" />
