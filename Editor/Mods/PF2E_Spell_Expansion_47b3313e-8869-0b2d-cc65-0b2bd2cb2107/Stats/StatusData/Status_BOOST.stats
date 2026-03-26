@@ -301,6 +301,69 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="ada3f9a0-b6cf-4f56-9210-79959467f0c7" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66783c3c-65b0-4a29-b845-15382b9a3824" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_AURA" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5afb5b14-9f01-4419-aff3-d76cbc145c12" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="8" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER') ):ApplyStatus(FROZEN_FOG_DAMAGE_APPLY,100,0);" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="DangerousForPathfinding;ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('FROZEN_FOG_CLEANUP',context.Source)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="04fcc21c-6341-4efa-bf3c-b7c3b1301367" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_DAMAGE_APPLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0e3e742b-505a-49e3-8369-b54b73bf3280" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold);" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution,MovableSpellDC('FROZEN_FOG_SUSTAIN_TRACKER'));" />
+        <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not SaveCrit()):DealDamage(6d8,Cold,Magical);IF(SaveCrit()):DealDamage((6d8)*2,Cold,Magical);IF(SaveCrit()):ApplyStatus(CriticalFailureDisplay,100,0);ApplyStatus(FROZEN_FOG_CLUMSY,100,10);" />
+        <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not SaveCritMiss('Fort')):DealDamage(6d8/2,Cold,Magical);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ffdcfb3-ba51-4be0-8265-e09efcea63ef" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_CLUMSY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="adf03886-96e1-4420-839e-a1f64d0dcbea" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd73fba07gc2fegf23cg7ccfg8451ded87b56" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4115b8aeg672ag6d6fg4501gb4eeee8406e7" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4)" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(STAT_PEN_1AC);Tag(STAT_PEN_1REFLEX);Tag(STAT_PEN_1ACROBATICS);Tag(STAT_PEN_1STEALTH);Tag(STAT_PEN_1SLEIGHTOFHAND);Tag(STAT_PEN_SPEED_10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc20312f-de26-48b6-a94b-82cada8c31e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_SUSTAIN_TRACKER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4b6d7f6f-6f90-4640-a0fa-df4e72564429" />
+        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(FROZEN_FOG_SUSTAIN_READY,100,1);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(FROZEN_FOG_CLEANUP,100,0);RemoveStatus(FROZEN_FOG_SUSTAIN_READY);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="66cedab6-76cc-44cb-bb49-771849470149" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_SUSTAIN_READY" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FrozenFog_Sustain);Tag(CONCEALED_TO_GREATER_DARKVISION);Tag(DAZZLED);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f03369bc-14e6-46d8-b34c-7a0b0b804288" />
+        <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_CLEANUP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="6e23b0c7-0fc4-459a-8157-35018862fbe2" />
+      </fields>
+    </stat_object>
     <stat_object color="#FF000000" is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="548ea35f-211d-4653-9550-d57009c286f4" />
