@@ -169,18 +169,15 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_WallOfIce" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd328e761g702eg4acfg7aeeg6c1ae94e79b4" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3315c51dg1bd4gd770g7c5dgaf73ed44bb5a" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold,Magical)" />
-        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold,Magical)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Constitution" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(CLUMSY,100,10)" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PrepareSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="CastSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="TargetSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
-        <field name="UseCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Ice_FreezingSphereCreate_L6to8" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Damage_Ice_FreezingSphereCreate_L6to8" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:2;SpellSlotsGroup:1:1:6" />
         <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="MagicalDamage_External" enumeration_type_name="HitAnimationType" version="1" />
         <field name="RootSpellID" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="57b3ef84-b69e-4736-8ebd-9d11140a496a" />
@@ -201,6 +198,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf08df8b7gbba7g4765g15c5g6dfc0c8e8a54" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0d7bc822g0e7fga9a6g3783gedeee5b9e8a6" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4)" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Damage_Ice_FreezingSphereCreate_L6to8" />
+        <field name="TargetSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
       </fields>
     </stat_object>
     <stat_object color="#FF000000" is_substat="false">

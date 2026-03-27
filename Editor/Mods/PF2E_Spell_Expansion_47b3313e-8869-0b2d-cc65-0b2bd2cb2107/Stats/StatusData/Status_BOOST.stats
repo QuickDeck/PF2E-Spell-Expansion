@@ -310,6 +310,9 @@
         <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(not Tagged('INVISIBLE_HELPER') ):ApplyStatus(FROZEN_FOG_DAMAGE_APPLY,100,0);" />
         <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="DangerousForPathfinding;ShouldCheckLOS" enumeration_type_name="AuraFlags" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('FROZEN_FOG_CLEANUP',context.Source)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="af1a6e81-4b4f-4a86-8d13-18f401bd8749" />
+        <field name="SoundLoop" type="StringTableFieldDefinition" value="Spell_Status_FireShieldChill_MO" />
+        <field name="SoundStop" type="StringTableFieldDefinition" value="Spell_Status_FireShieldChill_MO_Stop" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -318,12 +321,17 @@
         <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_DAMAGE_APPLY" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="0e3e742b-505a-49e3-8369-b54b73bf3280" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Tag(CONCEALED_TO_GREATER_DARKVISION);Tag(DAZZLED);" />
         <field name="TooltipDamage" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="OnTickRoll" type="RollConditionsTableFieldDefinition" value="not SavingThrow(Ability.Constitution,MovableSpellDC('FROZEN_FOG_SUSTAIN_TRACKER'));" />
         <field name="OnTickSuccess" type="FunctorsTableFieldDefinition" value="IF(not SaveCrit()):DealDamage(6d8,Cold,Magical);IF(SaveCrit()):DealDamage((6d8)*2,Cold,Magical);IF(SaveCrit()):ApplyStatus(CriticalFailureDisplay,100,0);ApplyStatus(FROZEN_FOG_CLUMSY,100,10);" />
         <field name="OnTickFail" type="FunctorsTableFieldDefinition" value="IF(not SaveCritMiss('Fort')):DealDamage(6d8/2,Cold,Magical);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfbf4d658g5c5ag6651gb8a9g6dc394f62fff" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h92622960g45e4gd5edg6c35g29528ea6e0f5" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Cold)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_WallOfIce" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -336,6 +344,8 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(4)" />
         <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(STAT_PEN_1AC);Tag(STAT_PEN_1REFLEX);Tag(STAT_PEN_1ACROBATICS);Tag(STAT_PEN_1STEALTH);Tag(STAT_PEN_1SLEIGHTOFHAND);Tag(STAT_PEN_SPEED_10);" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -353,8 +363,13 @@
         <field name="UUID" type="IdTableFieldDefinition" value="66cedab6-76cc-44cb-bb49-771849470149" />
         <field name="Name" type="NameTableFieldDefinition" value="FROZEN_FOG_SUSTAIN_READY" />
         <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FrozenFog_Sustain);Tag(CONCEALED_TO_GREATER_DARKVISION);Tag(DAZZLED);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FrozenFog_Sustain);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FROZEN_FOG_SUSTAIN_READY" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="1" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

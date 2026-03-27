@@ -336,4 +336,14 @@
   <content contentuid="hf0407aabg516cg67a2g9d54g50f0b2a7401a" version="1">Critical Success: The creature is unaffected.&lt;br&gt;Success: The target takes half damage.&lt;br&gt;Failure: The target takes full damage.&lt;br&gt;Critical Failure: The target takes double damage and is subject to the weapon's critical specialization effect.</content>
   <content contentuid="h2e498924gbb92g24f0g3ad6g7a7e38819804" version="1">Sustained Spell Movement Helper</content>
   <content contentuid="h4983f0bbg35bfg5ab8gf004gf0acfb20f37b" version="3">Helper Spell, Movable</content>
+  <content contentuid="hd328e761g702eg4acfg7aeeg6c1ae94e79b4" version="1">Frozen Fog</content>
+  <content contentuid="h3315c51dg1bd4gd770g7c5dgaf73ed44bb5a" version="1">You conjure a chilling mist that settles into the bones and makes it difficult to move. The fog persists for 1 minute. You can Sustain the spell once per round to move the fog up to 10 feet. A creature that starts its turn in the area takes [1] with a basic Fortitude save. A creature that fails its save is also clumsy 1 for 1 minute (clumsy 2 on a critical failure) and takes a –10-foot status penalty to Speeds for as long as it’s clumsy.</content>
+  <content contentuid="h9c1dd2b6g7563g9ccfg63c9g92cb0cd82421" version="2">You summon a tumultuous cloud of ash and smoke. The cloud persists for 1 minute. Creatures that start their turn within the cloud take 2d4 fire damage as their lungs fill with the hot, acrid smoke, with a basic Fortitude save.</content>
+  <content contentuid="hd5c315cfgd737g88f4g09cag9463628e5eb3" version="1">Frozen Fog</content>
+  <content contentuid="hd73fba07gc2fegf23cg7ccfg8451ded87b56" version="1">Clumsy (Frozen Fog)</content>
+  <content contentuid="h4115b8aeg672ag6d6fg4501gb4eeee8406e7" version="1">Your movements become clumsy and inexact. Clumsy always includes a value. You take a status penalty equal to the condition value to Dexterity-based checks and DCs, including AC, Reflex saves, ranged attack rolls, and skill checks using Acrobatics, Stealth, and Thievery. You also suffer a -[1] status penalty to your speed.</content>
+  <content contentuid="hf08df8b7gbba7g4765g15c5g6dfc0c8e8a54" version="1">Frozen Fog (Sustain)</content>
+  <content contentuid="h0d7bc822g0e7fga9a6g3783gedeee5b9e8a6" version="1">You can move the fog up to [1].</content>
+  <content contentuid="hfbf4d658g5c5ag6651gb8a9g6dc394f62fff" version="1">Frozen Fog</content>
+  <content contentuid="h92622960g45e4gd5edg6c35g29528ea6e0f5" version="1">A creature that starts its turn in the frozen fog takes [1] with a basic Fortitude save. A creature that fails its save is also clumsy 1 for 1 minute (clumsy 2 on a critical failure) and takes a –10-foot status penalty to Speeds for as long as it’s clumsy.</content>
 </contentList>
